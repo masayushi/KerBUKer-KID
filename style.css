@@ -179,4 +179,59 @@ nav #box #social a:nth-child(2) {
   color: #000000;
   margin: 0 auto 0;
 }
+
+#rinen {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px auto;
+      grid-template-columns: 620px auto;
+  grid-gap: 20px;
+  padding-right: 20px;
+}
+
+#rinen img {
+  width: 100%;
+  border: 10px solid white;
+}
+
+#rinen h2 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 7.2px;
+}
+
+#rinen p {
+  margin: 51px 0;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-align: left;
+  line-height: 2.5;
+}
+
+#rinen a {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2.78;
+  letter-spacing: 5.4px;
+  text-align: center;
+  border: 2px solid #000000;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+footer img {
+  margin: 126px 0 73px;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+}
 /*# sourceMappingURL=style.css.map */
