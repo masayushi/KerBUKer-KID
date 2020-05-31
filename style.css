@@ -11,6 +11,15 @@
   background-image: url(./img/7.png);
   width: 1920px;
   height: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner img {
+  margin: 0 auto;
 }
 
 nav {
@@ -37,6 +46,9 @@ nav #box #link {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 nav #box #link a {
@@ -44,10 +56,39 @@ nav #box #link a {
   font-weight: 100;
 }
 
+nav #box #link a:nth-child(2) {
+  text-align: center;
+}
+
+nav #box #link a:nth-child(3) {
+  text-align: right;
+}
+
 nav #box #social {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #social a:nth-child(2) {
+  text-align: right;
+}
+
+#contant {
+  width: 1920px;
+  height: 500px;
+  background-image: url(./img/3.png);
+}
+
+#contant h1 {
+  text-align: center;
+  margin-top: 46px;
+  font-size: 32px;
+  letter-spacing: 9.6px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
