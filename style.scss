@@ -11,6 +11,38 @@
     height: 1280px;
 }
 
-#nav {
-    
+// 導覽列
+nav {
+    // 固定位置，使用了fixed的話文字就無法置中(需要以其他方法置中)
+    position: fixed;
+    width: 1920px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    //導覽頁內的區域分割(盒子)
+    #box {
+        margin: 59px auto 0;
+        width: 1200px;
+        display: grid;
+    // 切割的距離可以參考網站https://app.zeplin.io/project/5ecbcce4a397b248bb685a2e/screen/5ecbcd24716d2647f4c8d917
+        grid-template-columns: 204px 351px 398px 120px 110px;
+
+        #link {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                font-size: 18px;
+                font-weight: 100;
+            }
+        }
+        
+        #social {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
