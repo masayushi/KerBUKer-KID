@@ -80,15 +80,103 @@ nav #box #social a:nth-child(2) {
 
 #contant {
   width: 1920px;
-  height: 2420px;
   background-image: url(./img/3.png);
+  border: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 #contant h1 {
   text-align: center;
   margin-top: 46px;
+  margin-bottom: 60px;
   font-size: 32px;
   letter-spacing: 9.6px;
   font-weight: 300;
+}
+
+#contant #news {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#contant #news div {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+#contant #news h3 {
+  color: #49aa45;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 3.6px;
+  text-align: center;
+  padding: 27px;
+}
+
+#contant #news h4 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 5.5px;
+  text-align: center;
+}
+
+#contant #news p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8px;
+  padding: 28px 0 31px;
+}
+
+#product {
+  text-align: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#product div {
+  width: 225px;
+  height: 500px;
+  position: absolute;
+  top: 73px;
+  right: 161px;
+}
+
+#product div h2 {
+  width: 219px;
+  height: 27px;
+  color: #f5bb28;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 8.4px;
+  text-align: left;
+  margin: 0 auto 30px;
+}
+
+#product div h3 {
+  color: #cccccc;
+  width: 219px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2.8px;
+  margin: 30px auto 46px;
+}
+
+#product div p {
+  width: 218px;
+  height: 219px;
+  font-size: 18px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000000;
+  margin: 0 auto 0;
 }
 /*# sourceMappingURL=style.css.map */

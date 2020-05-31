@@ -1,3 +1,8 @@
+$green: #49aa45;
+$gray333: #333333;
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -74,15 +79,102 @@ nav {
 
 #contant {
     width: 1920px;
-    height: 2420px;
     background-image: url(./img/3.png);
+    // 去掉橫幅與最新消息間的留白
+    border: 0.1px solid rgba(0,0,0,0);
 
     h1 {
         text-align: center;
         margin-top: 46px;
+        margin-bottom: 60px;
         font-size: 32px;
         letter-spacing: 9.6px;
         font-weight: 300;
     }
+    
+    #news {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+
+        div {
+            background-color: white;
+            padding: 40px 30px;
+        }
+        
+        h3 {
+            color: $green;
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 3.6px;
+            text-align: center;
+            padding: 27px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 5.5px;
+            text-align: center;
+        }
+        p {
+            color: $gray333;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.88;
+            letter-spacing: 4.8px;
+            padding: 28px 0 31px;
+        }
+    }
 }
+// 推薦飲品
+#product {
+    text-align: center;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+    div {
+        width: 225px;
+        height: 500px;
+        position: absolute;
+        top: 73px;
+        right: 161px;
+    
+    h2 {
+        width: 219px;
+        height: 27px;
+        color: #f5bb28;
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 8.4px;
+        text-align: left;
+        margin: 0 auto 30px;
+    }
+        
+        h3 {
+            color: #cccccc;
+            width: 219px;
+            height: 17px;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 2.8px;
+            margin: 30px auto 46px;
+        }
+        
+        p {
+            width: 218px;
+            height: 219px;
+            font-size: 18px;
+            line-height: 2.5;
+            letter-spacing: 5px;
+            text-align: left;
+            color: #000000;
+            margin: 0 auto 0;
+        }
+    }
+}
+// 經營理念
 
